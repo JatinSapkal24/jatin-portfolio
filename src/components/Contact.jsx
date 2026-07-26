@@ -86,7 +86,7 @@ export default function Contact() {
             {/* Social profiles */}
             <div className="flex items-center gap-4 mt-4">
               <a
-                href="https://linkedin.com/in/JatinSapkal"
+                href="https://www.linkedin.com/in/jatin-sapkal-4b96a5294/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl glass-card text-slate-700 dark:text-slate-300 hover:text-cloudBlue dark:hover:text-cloudBlue border-slate-200/50 dark:border-white/5 hover:-translate-y-1 transition-all duration-200"
@@ -95,7 +95,7 @@ export default function Contact() {
                 <FiLinkedin size={22} />
               </a>
               <a
-                href="https://github.com/JatinSapkal"
+                href="https://github.com/JatinSapkal24"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl glass-card text-slate-700 dark:text-slate-300 hover:text-orangeAccent dark:hover:text-orangeAccent border-slate-200/50 dark:border-white/5 hover:-translate-y-1 transition-all duration-200"

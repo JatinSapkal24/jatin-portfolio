@@ -137,12 +137,12 @@ export default function GitHubStats() {
               </div>
               <div className="text-left mt-6">
                 <a 
-                  href="https://github.com/JatinSapkal" 
+                  href="https://github.com/JatinSapkal24" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm font-bold text-cloudBlue dark:text-cloudBlue hover:underline flex items-center gap-1.5"
                 >
-                  @JatinSapkal
+                  @JatinSapkal24
                 </a>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1.5">View GitHub</p>
               </div>
