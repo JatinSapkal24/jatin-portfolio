@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply transition-colors duration-300 font-sans;
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-nav {
+  @apply bg-slate-950/60 backdrop-blur-md border-b border-white/5;
+}
+.light .glass-nav {
+  @apply bg-white/60 border-b border-black/5;
+}
+
+.glass-card {
+  @apply bg-slate-900/40 backdrop-blur-lg border border-white/5 shadow-2xl;
+}
+.light .glass-card {
+  @apply bg-white/40 border border-slate-200/50 shadow-lg;
+}
+
+.glass-card-hover {
+  @apply transition-all duration-300 ease-out;
+}
+.glass-card-hover:hover {
+  @apply -translate-y-1.5 border-cloudBlue/40 shadow-[0_12px_40px_rgba(14,165,233,0.15)];
+}
+.light .glass-card-hover:hover {
+  @apply -translate-y-1.5 border-cloudBlue/30 shadow-[0_12px_40px_rgba(14,165,233,0.08)];
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+.light ::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full;
+}
+.light ::-webkit-scrollbar-thumb {
+  @apply bg-slate-300;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-cloudBlue;
+}
+
+/* Background animated glow spheres */
+.bg-glow-sphere {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+  opacity: 0.15;
+  pointer-events: none;
+}
+.light .bg-glow-sphere {
+  opacity: 0.08;
+  filter: blur(100px);
+}
+
+/* Cursor blinking animation for typing */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.cursor-blink::after {
+  content: '|';
+  animation: blink 1s step-start infinite;
+  @apply text-orangeAccent ml-0.5;
+}
+
