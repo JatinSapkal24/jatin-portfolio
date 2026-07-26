@@ -34,7 +34,7 @@ function App() {
         <Skills />
         <Projects />
         <Certifications />
-        <GitHubStats />
+        <GitHubStats darkMode={darkMode} />
         <ResumeDownload />
         <Contact />
       </main>
